@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RJM Construction | General Contractor | Atlanta, GA</title>
+<meta name="description" content="RJM Construction is a full service general contracting company specializing in floor covering, roofing, remodeling, and more. Serving Metro Atlanta and surrounding areas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',system-ui,sans-serif;color:#1C1C1C;background:#fff;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button,input,textarea,select{font-family:inherit}
+:root{
+  --orange:#E87722;--orange-dk:#C5621A;--dark:#111111;--off:#F5F4F0;
+  --rule:#E5E3DE;--gray:#6B7280;--white:#fff;--r:6px;
+  --shadow:0 2px 20px rgba(0,0,0,.08);--shadow-lg:0 8px 48px rgba(0,0,0,.14);
+  --t:.22s cubic-bezier(.4,0,.2,1);--head:'Barlow Condensed',sans-serif;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+section{padding:88px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--orange);flex-shrink:0}
+h1,h2,h3{font-family:var(--head)}
+h1{font-size:clamp(3.2rem,6vw,5.6rem);font-weight:800;line-height:1;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.1}
+h3{font-size:1.15rem;font-weight:700}
+.lead{font-size:1.05rem;color:var(--gray);line-height:1.7;max-width:580px}
+.btn{display:inline-block;padding:13px 30px;font-family:var(--head);font-size:1rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:var(--r);cursor:pointer;transition:all var(--t);border:2px solid transparent}
+.btn-orange{background:var(--orange);color:#fff}.btn-orange:hover{background:var(--orange-dk)}
+.btn-dark{background:var(--dark);color:#fff}.btn-dark:hover{background:#333}
+.btn-outline{background:transparent;border-color:#fff;color:#fff}.btn-outline:hover{background:#fff;color:var(--dark)}
+.btn-outline-dark{background:transparent;border-color:var(--dark);color:var(--dark)}.btn-outline-dark:hover{background:var(--dark);color:#fff}
+.btn-sm{padding:9px 20px;font-size:.85rem}
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(17,17,17,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);transition:box-shadow var(--t)}
+#nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.35)}
+.nav-logo{display:flex;align-items:center;gap:12px;font-family:var(--head);font-size:1.45rem;font-weight:800;color:#fff;letter-spacing:.04em}
+.logo-box{width:40px;height:40px;background:var(--orange);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800;color:#fff;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-family:var(--head);font-size:.88rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.65);padding:8px 12px;border-radius:4px;transition:color var(--t),background var(--t)}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.08)}
+.nav-cta{background:var(--orange)!important;color:#fff!important;border-radius:var(--r)!important;font-weight:700!important}
+.nav-cta:hover{background:var(--orange-dk)!important}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:4px}
+.nav-toggle span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--dark);padding-top:72px;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-ph{position:absolute;inset:0;background:linear-gradient(135deg,#1a1a1a,#252525,#1c1c1c);display:flex;align-items:center;justify-content:center}
+.hero-ph span{font-family:var(--head);font-size:.85rem;letter-spacing:.3em;color:rgba(255,255,255,.06);text-transform:uppercase}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(17,17,17,.92) 40%,rgba(17,17,17,.5) 100%)}
+.hero-content{position:relative;z-index:2;padding:80px 0}
+.hero-content h1{color:#fff;text-transform:uppercase;margin:12px 0 6px}
+.hero-content h1 em{font-style:normal;color:var(--orange)}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.68);line-height:1.7;max-width:520px;margin:22px 0 38px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-side{position:absolute;right:10%;top:50%;transform:translateY(-50%);z-index:2;display:flex;flex-direction:column;gap:16px}
+.h-badge{background:var(--orange);color:#fff;padding:22px 28px;border-radius:var(--r);text-align:center}
+.h-badge .n{font-family:var(--head);font-size:2.8rem;font-weight:800;line-height:1}
+.h-badge .l{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;opacity:.9}
+.h-badge2{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#fff;padding:22px 28px;border-radius:var(--r);text-align:center;backdrop-filter:blur(8px)}
+/* STATS */
+#stats{background:var(--orange);padding:0}
+.stats-g{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:36px 24px;text-align:center;border-right:1px solid rgba(255,255,255,.22)}
+.stat:last-child{border-right:none}
+.stat .n{font-family:var(--head);font-size:2.8rem;font-weight:800;color:#fff;line-height:1;margin-bottom:6px}
+.stat .l{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);font-weight:600}
+/* SERVICES */
+#services{background:var(--off)}
+.svc-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:16px}
+.svc{background:#fff;border-radius:var(--r);padding:26px 22px;border:1px solid var(--rule);transition:box-shadow var(--t),transform var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
+.svc:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:transparent}
+.svc:hover::after{transform:scaleX(1)}
+.svc.ft{background:var(--dark);border-color:var(--dark)}
+.svc.ft .si{color:var(--orange)}.svc.ft h3{color:#fff}.svc.ft p{color:rgba(255,255,255,.52)}.svc.ft::after{background:#fff}
+.sb{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;background:var(--orange);color:#fff;border-radius:3px;margin-bottom:10px}
+.si{font-size:1.9rem;margin-bottom:12px}
+.svc h3{font-size:.98rem;margin-bottom:7px}.svc p{font-size:.82rem;color:var(--gray);line-height:1.6}
+/* PORTFOLIO */
+#portfolio{background:#fff}
+.pf-filt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.pf-btn{font-family:var(--head);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 18px;border-radius:40px;cursor:pointer;border:1.5px solid var(--rule);background:#fff;color:var(--gray);transition:all var(--t)}
+.pf-btn.active,.pf-btn:hover{background:var(--dark);color:#fff;border-color:var(--dark)}
+.pf-g{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:240px;gap:14px}
+.pf-item{position:relative;overflow:hidden;border-radius:var(--r);cursor:pointer;background:var(--off);transition:opacity var(--t)}
+.pf-item.tall{grid-row:span 2}.pf-item.wide{grid-column:span 2}
+.pf-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#e8e6e0,#d8d6d0);transition:transform var(--t)}
+.pf-item:hover .pf-ph{transform:scale(1.04)}
+.pf-ph .pi{font-size:2rem;opacity:.35}.pf-ph .pt{font-family:var(--head);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.28)}
+.pf-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 55%);opacity:0;transition:opacity var(--t);display:flex;flex-direction:column;justify-content:flex-end;padding:20px}
+.pf-item:hover .pf-ov{opacity:1}
+.pf-ov h3{color:#fff;font-size:.98rem;margin-bottom:3px}.pf-ov span{font-size:.72rem;color:var(--orange);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+/* ABOUT */
+#about{background:var(--off)}
+.ab-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.ab-img-wrap{position:relative}
+.ab-img{width:100%;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:linear-gradient(135deg,#d0cec8,#c0beba);display:flex;align-items:center;justify-content:center}
+.ab-acc{position:absolute;bottom:-24px;right:-24px;width:170px;height:170px;border-radius:var(--r);background:var(--orange);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:16px}
+.ab-acc .big{font-family:var(--head);font-size:2.8rem;font-weight:800;line-height:1;margin-bottom:4px}
+.ab-acc .sm{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.ab-text h2{margin-bottom:16px}.ab-text p{color:#444;line-height:1.8;margin-bottom:16px;font-size:.95rem}
+.area-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.area-tag{padding:5px 14px;background:#fff;border:1px solid var(--rule);border-radius:40px;font-size:.8rem;font-weight:600;color:var(--dark)}
+/* CREDENTIALS */
+#credentials{background:#fff}
+.cr-g{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cr-c{background:var(--off);border-radius:var(--r);padding:30px 26px;border:1px solid var(--rule);transition:box-shadow var(--t)}
+.cr-c:hover{box-shadow:var(--shadow)}
+.cr-ico{font-size:2rem;margin-bottom:14px}
+.cr-c h3{font-size:.98rem;margin-bottom:9px}.cr-c p{font-size:.84rem;color:var(--gray);line-height:1.6}
+.cr-tag{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange);margin-top:14px}
+.cr-tag::before{content:'✓'}
+/* INVESTORS */
+#investors{background:var(--dark);position:relative;overflow:hidden}
+#investors::before{content:'';position:absolute;top:0;right:0;width:600px;height:100%;background:linear-gradient(135deg,transparent,rgba(232,119,34,.07))}
+.inv-g{display:grid;grid-template-columns:1fr 460px;gap:72px;align-items:center;position:relative;z-index:1}
+.inv-t h2{color:#fff;margin-bottom:18px}
+.inv-t p{color:rgba(255,255,255,.62);line-height:1.8;margin-bottom:14px;font-size:.95rem}
+.perks{margin:28px 0;display:flex;flex-direction:column;gap:14px}
+.perk{display:flex;align-items:flex-start;gap:14px}
+.perk-dot{width:26px;height:26px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.7rem;font-weight:800;color:#fff;margin-top:1px}
+.perk p{color:rgba(255,255,255,.68);font-size:.9rem;line-height:1.65}.perk p strong{color:#fff}
+.inv-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:36px 32px;backdrop-filter:blur(10px)}
+.inv-card h3{color:#fff;font-size:1.3rem;margin-bottom:22px}
+/* FORMS */
+.fg{margin-bottom:15px}
+.fg label{display:block;font-size:.73rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+.fg.dk label{color:rgba(255,255,255,.45)}
+.fc{width:100%;padding:12px 15px;border:1.5px solid var(--rule);border-radius:var(--r);font-size:.92rem;background:#fff;color:var(--dark);transition:border-color var(--t);outline:none}
+.fc:focus{border-color:var(--orange)}
+.fc.dk{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1);color:#fff}
+.fc.dk::placeholder{color:rgba(255,255,255,.25)}.fc.dk:focus{border-color:var(--orange)}
+textarea.fc{resize:vertical;min-height:90px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+/* REVIEWS */
+#reviews{background:var(--off)}
+.rt-tabs{display:flex;border-bottom:2px solid var(--rule);margin-bottom:42px}
+.rtab{font-family:var(--head);font-size:.92rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:13px 26px;cursor:pointer;color:var(--gray);border:none;border-bottom:3px solid transparent;background:none;margin-bottom:-2px;transition:all var(--t)}
+.rtab.active{color:var(--dark);border-bottom-color:var(--orange)}.rtab:hover:not(.active){color:var(--dark)}
+.tpanel{display:none}.tpanel.active{display:block}
+.rv-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv-c{background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--rule);transition:box-shadow var(--t)}
+.rv-c:hover{box-shadow:var(--shadow)}
+.rv-stars{color:var(--orange);font-size:1rem;margin-bottom:10px;letter-spacing:2px}
+.rv-text{font-size:.88rem;color:#444;line-height:1.7;margin-bottom:14px;font-style:italic}
+.rv-auth{display:flex;align-items:center;gap:11px}
+.rv-av{width:38px;height:38px;border-radius:50%;background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--head);font-size:.88rem;font-weight:700;flex-shrink:0}
+.rv-name{font-size:.84rem;font-weight:700;color:var(--dark)}.rv-date{font-size:.7rem;color:var(--gray)}
+.sp{display:flex;gap:6px;margin-bottom:4px}
+.sb2{font-size:1.6rem;cursor:pointer;color:var(--rule);transition:color var(--t);background:none;border:none;padding:2px;line-height:1}
+.sb2.on{color:var(--orange)}
+.cn{background:#FFF8F5;border:1px solid #FFD4B8;border-radius:var(--r);padding:18px 22px;margin-bottom:26px;font-size:.87rem;color:#7A4A28;line-height:1.6}
+.cn strong{color:#5A3010}
+.fmax{max-width:660px;margin:0 auto}
+/* CONTACT */
+#contact{background:#fff}
+.ct-g{display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start}
+.ct-b{margin-bottom:26px;display:flex;align-items:flex-start;gap:15px}
+.ct-ico{width:46px;height:46px;background:var(--off);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+.ct-b h4{font-size:.84rem;font-weight:700;margin-bottom:3px}.ct-b p{font-size:.87rem;color:var(--gray)}.ct-b a{color:var(--orange);font-weight:600}
+.ct-card{background:var(--off);border-radius:var(--r);padding:34px 30px;border:1px solid var(--rule)}
+.ct-card h3{margin-bottom:22px;font-size:1.25rem}
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.5);padding:64px 0 0}
+.ft-g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-logo{font-family:var(--head);font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.ft-brand p{font-size:.87rem;line-height:1.7;margin-bottom:18px;max-width:280px}
+.ft-socs{display:flex;gap:8px}
+.ft-s{width:34px;height:34px;background:rgba(255,255,255,.07);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:.8rem;color:rgba(255,255,255,.55);transition:all var(--t)}
+.ft-s:hover{background:var(--orange);color:#fff}
+.ft-col h4{font-family:var(--head);font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.ft-col li{margin-bottom:9px}.ft-col a{font-size:.87rem;transition:color var(--t)}.ft-col a:hover{color:var(--orange)}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:.77rem}
+.ft-bot a{color:var(--orange)}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .5s ease,transform .5s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .wrap{padding:0 28px}.ab-g,.inv-g,.ct-g{grid-template-columns:1fr}
+  .pf-g{grid-template-columns:repeat(2,1fr)}.pf-item.wide{grid-column:span 1}
+  .ft-g{grid-template-columns:1fr 1fr}#nav{padding:0 28px}.hero-side{display:none}
+}
+@media(max-width:768px){
+  section{padding:60px 0}.stats-g{grid-template-columns:repeat(2,1fr)}.svc-g{grid-template-columns:repeat(2,1fr)}
+  .cr-g,.rv-g{grid-template-columns:1fr}.pf-g{grid-template-columns:1fr}.pf-item.tall{grid-row:span 1}
+  .nav-links{display:none}.nav-toggle{display:flex}h1{font-size:2.8rem}.ft-g{grid-template-columns:1fr}.fr{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a class="nav-logo" href="#hero"><div class="logo-box">RJM</div>RJM CONSTRUCTION</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Our Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#credentials">Credentials</a></li>
+    <li><a href="#investors">Investors</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-ph"><span>Add Hero Background Image Here</span></div>
+    <!-- TO ADD PHOTO: replace line above with <img src="hero.jpg" alt="RJM Construction" style="width:100%;height:100%;object-fit:cover;opacity:.35"> -->
+  </div>
+  <div class="hero-ov"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow">General Contractor</span>
+    <h1>BUILT WITH<br>PRECISION.<br><em>FINISHED</em><br>WITH PRIDE.</h1>
+    <p class="hero-sub">RJM Construction is a full service general contracting company specializing in floor covering and a complete range of residential and commercial construction services. Quality work, honest pricing, real results.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-orange">Request a Free Quote</a>
+      <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="h-badge"><div class="n">100%</div><div class="l">Licensed<br>and Insured</div></div>
+    <div class="h-badge2">
+      <div style="font-family:var(--head);font-size:2.6rem;font-weight:800;line-height:1;margin-bottom:4px">13+</div>
+      <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)">Services<br>Available</div>
+    </div>
+  </div>
+</section>
+
+<div id="stats">
+  <div class="stats-g wrap">
+    <div class="stat reveal"><div class="n">13+</div><div class="l">Services Offered</div></div>
+    <div class="stat reveal d1"><div class="n">500+</div><div class="l">Projects Completed</div></div>
+    <div class="stat reveal d2"><div class="n">100%</div><div class="l">Licensed and Insured</div></div>
+    <div class="stat reveal d3"><div class="n">5 Star</div><div class="l">Client Rated</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sh center reveal" style="text-align:center;margin-bottom:52px">
+      <span class="eyebrow">What We Do</span>
+      <h2>Full Service Construction</h2>
+      <p class="lead" style="margin:14px auto 0">From floor to ceiling and everything in between. RJM handles it all under one roof so you never need to juggle multiple contractors.</p>
+    </div>
+    <div class="svc-g">
+      <div class="svc ft reveal"><span class="sb">Our Specialty</span><div class="si">&#x1FA35;</div><h3>Floor Covering</h3><p>Hardwood, LVP, laminate, tile, and carpet installed with precision. Our signature service.</p></div>
+      <div class="svc reveal d1"><div class="si">&#x1F3E0;</div><h3>Roofing</h3><p>Full replacements, repairs, and new installations for residential and commercial properties.</p></div>
+      <div class="svc reveal d2"><div class="si">&#x1F3D7;&#xFE0F;</div><h3>Siding</h3><p>Vinyl, fiber cement, wood, and composite siding installation and replacement.</p></div>
+      <div class="svc reveal d3"><div class="si">&#x1FAB5;</div><h3>Drywall</h3><p>Hanging, taping, mudding, and finishing to a smooth paint ready surface every time.</p></div>
+      <div class="svc reveal"><div class="si">&#x1F373;</div><h3>Countertops</h3><p>Granite, quartz, laminate, and butcher block supply and professional installation.</p></div>
+      <div class="svc reveal d1"><div class="si">&#x1F4A7;</div><h3>Pressure Washing</h3><p>Driveways, decks, siding, and fences restored to like new condition.</p></div>
+      <div class="svc reveal d2"><div class="si">&#x1F3A8;</div><h3>Paint</h3><p>Interior and exterior painting with premium materials and flawless finish work.</p></div>
+      <div class="svc reveal d3"><div class="si">&#x26A1;</div><h3>Electrical</h3><p>Panels, outlets, lighting, and wiring upgrades handled safely and to code.</p></div>
+      <div class="svc reveal"><div class="si">&#x1F527;</div><h3>Plumbing</h3><p>Repairs, fixture replacements, and new installations for kitchens and bathrooms.</p></div>
+      <div class="svc reveal d1"><div class="si">&#x2744;&#xFE0F;</div><h3>HVAC</h3><p>Heating and cooling installation, maintenance, and repair services.</p></div>
+      <div class="svc reveal d2"><div class="si">&#x1F528;</div><h3>Remodeling</h3><p>Kitchen, bathroom, and whole home remodels designed and built to your vision.</p></div>
+      <div class="svc reveal d3"><div class="si">&#x1F3D8;&#xFE0F;</div><h3>Additions</h3><p>Room additions, garage conversions, and square footage expansions done right.</p></div>
+      <div class="svc reveal"><div class="si">&#x1F33F;</div><h3>Outdoor Living</h3><p>Decks, patios, pergolas, and outdoor spaces built for enjoyment and lasting value.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:52px">
+      <span class="eyebrow">Our Work</span>
+      <h2>Recent Projects</h2>
+      <p class="lead">Every project reflects our commitment to quality craftsmanship and client satisfaction.</p>
+    </div>
+    <div class="pf-filt reveal">
+      <button class="pf-btn active" onclick="filterPF(this,'all')">All Projects</button>
+      <button class="pf-btn" onclick="filterPF(this,'floors')">Floor Covering</button>
+      <button class="pf-btn" onclick="filterPF(this,'remodel')">Remodeling</button>
+      <button class="pf-btn" onclick="filterPF(this,'exterior')">Exterior</button>
+      <button class="pf-btn" onclick="filterPF(this,'outdoor')">Outdoor Living</button>
+    </div>
+    <div class="pf-g reveal">
+      <!-- PHOTOS: Replace .pf-ph divs with <img src="photo.jpg" alt="description"> when you have real photos -->
+      <div class="pf-item tall" data-cat="floors"><div class="pf-ph"><div class="pi">&#x1FA35;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Hardwood Floor Installation</h3><span>Floor Covering</span></div></div>
+      <div class="pf-item" data-cat="remodel"><div class="pf-ph"><div class="pi">&#x1F373;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Kitchen Remodel</h3><span>Remodeling</span></div></div>
+      <div class="pf-item" data-cat="exterior"><div class="pf-ph"><div class="pi">&#x1F3E0;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Roof Replacement</h3><span>Exterior</span></div></div>
+      <div class="pf-item wide" data-cat="outdoor"><div class="pf-ph"><div class="pi">&#x1F33F;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Custom Deck Build</h3><span>Outdoor Living</span></div></div>
+      <div class="pf-item" data-cat="floors"><div class="pf-ph"><div class="pi">&#x1FA35;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>LVP Installation</h3><span>Floor Covering</span></div></div>
+      <div class="pf-item" data-cat="remodel"><div class="pf-ph"><div class="pi">&#x1F6C1;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Bathroom Remodel</h3><span>Remodeling</span></div></div>
+      <div class="pf-item" data-cat="exterior"><div class="pf-ph"><div class="pi">&#x1F3D7;&#xFE0F;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Siding Replacement</h3><span>Exterior</span></div></div>
+      <div class="pf-item" data-cat="remodel"><div class="pf-ph"><div class="pi">&#x1F3A8;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Full Interior Paint</h3><span>Remodeling</span></div></div>
+      <div class="pf-item" data-cat="floors"><div class="pf-ph"><div class="pi">&#x1FA35;</div><div class="pt">Add Project Photo</div></div><div class="pf-ov"><h3>Tile Floor Install</h3><span>Floor Covering</span></div></div>
+    </div>
+    <div style="text-align:center;margin-top:44px" class="reveal"><a href="#contact" class="btn btn-outline-dark">Start Your Project</a></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="ab-g">
+      <div class="ab-img-wrap reveal">
+        <div class="ab-img">
+          <!-- PHOTO: Replace with <img src="team.jpg" alt="RJM Construction Team"> -->
+          <div class="pf-ph" style="position:relative;width:100%;height:420px;border-radius:var(--r)"><div class="pi" style="font-size:3rem;opacity:.25">&#x1F477;</div><div class="pt">Add Team or Job Site Photo</div></div>
+        </div>
+        <div class="ab-acc"><div class="big">RJM</div><div class="sm">Built on<br>Trust</div></div>
+      </div>
+      <div class="ab-text reveal d2">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Your Trusted General Contractor</h2>
+        <p>RJM Construction is a full service general contracting company built on a foundation of quality craftsmanship, honest communication, and real results. We specialize in floor covering while providing a broad range of construction services for homeowners, businesses, and real estate investors.</p>
+        <p>We bring a personal touch to every project. You will always know who is on your job, what to expect, and when it will be done. No runarounds. No surprises.</p>
+        <div style="margin:24px 0">
+          <span class="eyebrow">Areas We Serve</span>
+          <div class="area-list">
+            <span class="area-tag">Metro Atlanta, GA</span>
+            <span class="area-tag">Add Your City</span>
+            <span class="area-tag">Add Your City</span>
+            <span class="area-tag">Surrounding Counties</span>
+          </div>
+        </div>
+        <span class="eyebrow">Reach Us Directly</span>
+        <p style="margin-bottom:5px"><strong>Choche Reyes</strong> &nbsp; <a href="tel:6787666230" style="color:var(--orange);font-weight:600">678 766 6230</a></p>
+        <p><a href="mailto:reyesj71400@gmail.com" style="color:var(--orange);font-weight:600">reyesj71400@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="eyebrow">Trust and Compliance</span>
+      <h2>Licensed, Insured and Certified</h2>
+      <p class="lead" style="margin:14px auto 0">We maintain all required licenses and carry full insurance so every project is protected from start to finish.</p>
+    </div>
+    <div class="cr-g">
+      <div class="cr-c reveal"><div class="cr-ico">&#x1F4CB;</div><h3>General Contractor License</h3><p>RJM holds a valid General Contractor license for all work we perform. License details and documentation available upon request.</p><div class="cr-tag">License Number: Add Here</div></div>
+      <div class="cr-c reveal d1"><div class="cr-ico">&#x1F6E1;&#xFE0F;</div><h3>Fully Insured</h3><p>We carry comprehensive general liability and workers compensation insurance protecting you, your property, and our crew throughout every project.</p><div class="cr-tag">Certificates Available on Request</div></div>
+      <div class="cr-c reveal d2"><div class="cr-ico">&#x26A1;</div><h3>Trade Certifications</h3><p>Our team holds certifications across electrical, plumbing, and HVAC ensuring all work meets code requirements and safety standards in every jurisdiction we serve.</p><div class="cr-tag">All Work Meets Local Code</div></div>
+      <div class="cr-c reveal"><div class="cr-ico">&#x1F3C6;</div><h3>Professional Memberships</h3><p>RJM Construction is a member of professional trade associations committed to ethical business practices, continuing education, and quality standards.</p><div class="cr-tag">Add Memberships Here</div></div>
+      <div class="cr-c reveal d1"><div class="cr-ico">&#x1F50D;</div><h3>Background Checked Crew</h3><p>Every member of our crew undergoes a thorough background check. You can feel confident about who is working in and around your home or investment property.</p><div class="cr-tag">All Crew Verified</div></div>
+      <div class="cr-c reveal d2"><div class="cr-ico">&#x1F4DE;</div><h3>Verify Our Credentials</h3><p>We welcome verification of all licenses, insurance policies, and certifications. Transparency is a core value at RJM Construction. Ask us anything, anytime.</p><a href="#contact" class="btn btn-outline-dark btn-sm" style="margin-top:16px;display:inline-block">Request Documents</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="investors">
+  <div class="wrap">
+    <div class="inv-g">
+      <div class="inv-t reveal">
+        <span class="eyebrow" style="color:var(--orange)">Real Estate Investors</span>
+        <h2>Let's Build Your Portfolio Together</h2>
+        <p>RJM Construction has the capacity, experience, and service range to be your go-to contractor for fix and flip projects, rental renovations, new construction, and property maintenance.</p>
+        <p>We understand the timelines and margins that matter in real estate investing. We move fast, communicate clearly, and deliver quality work that maximizes your return on every property.</p>
+        <div class="perks">
+          <div class="perk"><div class="perk-dot">1</div><p><strong>Full scope, one contractor.</strong> From demo to final flooring we handle everything so you manage one relationship instead of eight subs.</p></div>
+          <div class="perk"><div class="perk-dot">2</div><p><strong>Investor pricing available.</strong> Volume relationships and recurring agreements unlock preferred rates and scheduling priority.</p></div>
+          <div class="perk"><div class="perk-dot">3</div><p><strong>Fast turnaround.</strong> We know every day on market costs money. We work to get your properties rent ready or listing ready on schedule.</p></div>
+          <div class="perk"><div class="perk-dot">4</div><p><strong>Transparent estimates.</strong> Detailed line item quotes with no hidden fees so your numbers work before we break ground.</p></div>
+        </div>
+        <a href="#investor-form" class="btn btn-orange">Connect With Us</a>
+      </div>
+      <div class="reveal d2" id="investor-form">
+        <div class="inv-card">
+          <h3>Investor Inquiry</h3>
+          <!-- FORM: Change action="#" to your Formspree endpoint or add netlify attribute -->
+          <form action="#" method="POST">
+            <div class="fg dk"><label>Full Name</label><input class="fc dk" type="text" name="inv-name" placeholder="Your name" required></div>
+            <div class="fg dk"><label>Email Address</label><input class="fc dk" type="email" name="inv-email" placeholder="your@email.com" required></div>
+            <div class="fg dk"><label>Phone Number</label><input class="fc dk" type="tel" name="inv-phone" placeholder="(000) 000 0000"></div>
+            <div class="fg dk"><label>Number of Properties</label>
+              <select class="fc dk" name="inv-props"><option value="">Select range</option><option>1 to 3</option><option>4 to 10</option><option>11 to 25</option><option>25 or more</option></select>
+            </div>
+            <div class="fg dk"><label>Tell Us About Your Projects</label><textarea class="fc dk" name="inv-msg" placeholder="Property types, locations, scope of work..." rows="3"></textarea></div>
+            <button type="submit" class="btn btn-orange" style="width:100%;text-align:center">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:52px">
+      <span class="eyebrow">Client Feedback</span>
+      <h2>What Our Clients Say</h2>
+      <p class="lead" style="margin:14px auto 0">Real reviews from real clients. We are proud of the trust our community places in RJM Construction.</p>
+    </div>
+    <div class="rt-tabs reveal">
+      <button class="rtab active" onclick="showTab(this,'t-rv')">All Reviews</button>
+      <button class="rtab" onclick="showTab(this,'t-leave')">Leave a Review</button>
+      <button class="rtab" onclick="showTab(this,'t-comp')">File a Complaint</button>
+    </div>
+    <div id="t-rv" class="tpanel active">
+      <div class="rv-g">
+        <div class="rv-c reveal"><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">"RJM did our entire first floor in hardwood and we could not be happier. Professional, on time, and the quality is outstanding. Will absolutely use them again."</p><div class="rv-auth"><div class="rv-av">MJ</div><div><div class="rv-name">M. Johnson</div><div class="rv-date">Verified Client</div></div></div></div>
+        <div class="rv-c reveal d1"><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">"Hired them for a full kitchen remodel. They handled flooring, countertops, and paint all at once. Saved so much time dealing with one contractor. Highly recommend."</p><div class="rv-auth"><div class="rv-av">TW</div><div><div class="rv-name">T. Williams</div><div class="rv-date">Verified Client</div></div></div></div>
+        <div class="rv-c reveal d2"><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">"As a real estate investor I work with RJM across multiple properties. Fast turnaround, fair pricing, and quality work that holds up. They understand investors."</p><div class="rv-auth"><div class="rv-av">DR</div><div><div class="rv-name">D. Rivera</div><div class="rv-date">Real Estate Investor</div></div></div></div>
+      </div>
+      <div style="text-align:center;margin-top:32px"><p style="color:var(--gray);font-size:.9rem;margin-bottom:14px">Worked with us? Share your experience.</p><button class="btn btn-outline-dark" onclick="showTab(document.querySelectorAll('.rtab')[1],'t-leave')">Leave a Review</button></div>
+    </div>
+    <div id="t-leave" class="tpanel">
+      <div class="fmax">
+        <h3 style="margin-bottom:5px">Share Your Experience</h3>
+        <p style="color:var(--gray);font-size:.9rem;margin-bottom:26px">Your feedback helps others and helps us keep improving.</p>
+        <form action="#" method="POST">
+          <div class="fr">
+            <div class="fg"><label>Your Name</label><input class="fc" type="text" name="r-name" placeholder="Full name" required></div>
+            <div class="fg"><label>Service Used</label><select class="fc" name="r-svc"><option value="">Select a service</option><option>Floor Covering</option><option>Roofing</option><option>Remodeling</option><option>Painting</option><option>Electrical</option><option>Plumbing</option><option>HVAC</option><option>Other</option></select></div>
+          </div>
+          <div class="fg"><label>Your Rating</label>
+            <div class="sp"><button type="button" class="sb2" onclick="setStar(1)">&#9733;</button><button type="button" class="sb2" onclick="setStar(2)">&#9733;</button><button type="button" class="sb2" onclick="setStar(3)">&#9733;</button><button type="button" class="sb2" onclick="setStar(4)">&#9733;</button><button type="button" class="sb2" onclick="setStar(5)">&#9733;</button></div>
+            <input type="hidden" name="r-stars" id="sv">
+          </div>
+          <div class="fg"><label>Your Review</label><textarea class="fc" name="r-text" placeholder="Tell us about your experience..." rows="5" required></textarea></div>
+          <div class="fg"><label>Email (optional, not published)</label><input class="fc" type="email" name="r-email" placeholder="your@email.com"></div>
+          <button type="submit" class="btn btn-orange">Submit Review</button>
+        </form>
+      </div>
+    </div>
+    <div id="t-comp" class="tpanel">
+      <div class="fmax">
+        <div class="cn"><strong>We take every concern seriously.</strong> If your experience did not meet our standards we want to hear about it and make it right. All complaints are reviewed within 2 business days by our leadership team. Your information is kept confidential.</div>
+        <form action="#" method="POST">
+          <div class="fr">
+            <div class="fg"><label>Your Name</label><input class="fc" type="text" name="c-name" placeholder="Full name" required></div>
+            <div class="fg"><label>Phone or Email</label><input class="fc" type="text" name="c-contact" placeholder="Best way to reach you" required></div>
+          </div>
+          <div class="fr">
+            <div class="fg"><label>Job Type</label><select class="fc" name="c-job"><option value="">Select job type</option><option>Floor Covering</option><option>Roofing</option><option>Remodeling</option><option>Painting</option><option>Other</option></select></div>
+            <div class="fg"><label>Approximate Job Date</label><input class="fc" type="text" name="c-date" placeholder="Month and year"></div>
+          </div>
+          <div class="fg"><label>Describe the Issue</label><textarea class="fc" name="c-desc" placeholder="Please describe your concern in detail..." rows="5" required></textarea></div>
+          <div class="fg"><label>Desired Resolution</label><textarea class="fc" name="c-res" placeholder="What outcome would resolve this for you?" rows="3"></textarea></div>
+          <button type="submit" class="btn btn-dark">Submit Complaint</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="ct-g">
+      <div class="reveal">
+        <span class="eyebrow">Let's Talk</span>
+        <h2>Request a Free Quote</h2>
+        <p class="lead" style="margin-bottom:36px">Ready to start your project? Fill out the form or reach out directly and we will get back to you within one business day.</p>
+        <div class="ct-b"><div class="ct-ico">&#x1F4DE;</div><div><h4>Phone</h4><p><a href="tel:6787666230">678 766 6230</a></p></div></div>
+        <div class="ct-b"><div class="ct-ico">&#x2709;&#xFE0F;</div><div><h4>Email</h4><p><a href="mailto:reyesj71400@gmail.com">reyesj71400@gmail.com</a></p></div></div>
+        <div class="ct-b"><div class="ct-ico">&#x1F4CD;</div><div><h4>Service Area</h4><p>Metro Atlanta, GA and surrounding areas</p></div></div>
+        <div class="ct-b"><div class="ct-ico">&#x1F550;</div><div><h4>Hours</h4><p>Monday to Friday: 7am to 6pm<br>Saturday: 8am to 4pm</p></div></div>
+      </div>
+      <div class="reveal d2">
+        <div class="ct-card">
+          <h3>Project Inquiry</h3>
+          <!-- FORM SETUP: 
+               Option 1 (Formspree) change action="#" to action="https://formspree.io/f/YOUR_ID"
+               Option 2 (Netlify) add  data-netlify="true"  to the form tag
+               Option 3 (EmailJS) use their free JS SDK -->
+          <form action="#" method="POST">
+            <div class="fr">
+              <div class="fg"><label>First Name</label><input class="fc" type="text" name="first" placeholder="First" required></div>
+              <div class="fg"><label>Last Name</label><input class="fc" type="text" name="last" placeholder="Last" required></div>
+            </div>
+            <div class="fg"><label>Email Address</label><input class="fc" type="email" name="email" placeholder="your@email.com" required></div>
+            <div class="fg"><label>Phone Number</label><input class="fc" type="tel" name="phone" placeholder="(000) 000 0000"></div>
+            <div class="fg"><label>Service Needed</label>
+              <select class="fc" name="service" required>
+                <option value="">Select a service</option>
+                <option>Floor Covering</option><option>Roofing</option><option>Siding</option><option>Drywall</option>
+                <option>Countertops</option><option>Pressure Washing</option><option>Paint</option><option>Electrical</option>
+                <option>Plumbing</option><option>HVAC</option><option>Remodeling</option><option>Additions</option>
+                <option>Outdoor Living</option><option>Multiple Services</option>
+              </select>
+            </div>
+            <div class="fg"><label>Project Description</label><textarea class="fc" name="desc" placeholder="Tell us about your project, location, timeline, and any details that would help us give you an accurate quote..." rows="4" required></textarea></div>
+            <button type="submit" class="btn btn-orange" style="width:100%;text-align:center">Request Free Quote</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft-g">
+      <div class="ft-brand">
+        <div class="ft-logo"><div class="logo-box" style="width:34px;height:34px;font-size:.8rem">RJM</div>RJM CONSTRUCTION</div>
+        <p>Full service general contracting specializing in floor covering and a complete range of residential and commercial construction services. Licensed, insured, and built on trust.</p>
+        <div class="ft-socs"><a href="#" class="ft-s">f</a><a href="#" class="ft-s">in</a><a href="#" class="ft-s">ig</a></div>
+      </div>
+      <div class="ft-col"><h4>Services</h4><ul>
+        <li><a href="#services">Floor Covering</a></li><li><a href="#services">Roofing</a></li>
+        <li><a href="#services">Remodeling</a></li><li><a href="#services">Electrical</a></li>
+        <li><a href="#services">Plumbing</a></li><li><a href="#services">HVAC</a></li>
+        <li><a href="#services">Outdoor Living</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Company</h4><ul>
+        <li><a href="#about">About Us</a></li><li><a href="#portfolio">Our Work</a></li>
+        <li><a href="#credentials">Credentials</a></li><li><a href="#investors">For Investors</a></li>
+        <li><a href="#reviews">Reviews</a></li><li><a href="#contact">Get a Quote</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Contact</h4><ul>
+        <li style="color:rgba(255,255,255,.5);font-size:.87rem;line-height:1.6">Metro Atlanta, GA<br>and Surrounding Areas</li>
+        <li style="margin-top:10px"><a href="tel:6787666230" style="color:var(--orange)">678 766 6230</a></li>
+        <li><a href="mailto:reyesj71400@gmail.com" style="color:rgba(255,255,255,.45);font-size:.82rem">reyesj71400@gmail.com</a></li>
+      </ul><a href="#contact" class="btn btn-orange btn-sm" style="margin-top:18px;display:inline-block">Free Estimate</a></div>
+    </div>
+    <div class="ft-bot">
+      <span>&#169; 2026 RJM Construction. All rights reserved.</span>
+      <span>Website by <a href="http://benbeady.com" target="_blank">benbeady.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',scrollY>40);
+  const ss=['services','portfolio','about','credentials','investors','reviews','contact'];
+  let c='';ss.forEach(id=>{const e=document.getElementById(id);if(e&&scrollY>=e.offsetTop-90)c=id;});
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c));
+});
+let open=false;
+function toggleNav(){
+  open=!open;
+  const nl=document.getElementById('nav-links');
+  nl.style.cssText=open?'display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#111;padding:18px 28px;gap:2px;border-top:1px solid rgba(255,255,255,.08)':'';
+}
+document.querySelectorAll('#nav-links a').forEach(a=>a.addEventListener('click',()=>{open=false;document.getElementById('nav-links').style.cssText=''}));
+function filterPF(btn,cat){
+  document.querySelectorAll('.pf-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.querySelectorAll('.pf-item').forEach(el=>{const s=cat==='all'||el.dataset.cat===cat;el.style.opacity=s?'1':'0.2';el.style.pointerEvents=s?'auto':'none';});
+}
+function showTab(btn,id){
+  document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tpanel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');document.getElementById(id).classList.add('active');
+}
+function setStar(n){document.querySelectorAll('.sb2').forEach((b,i)=>b.classList.toggle('on',i<n));document.getElementById('sv').value=n;}
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
